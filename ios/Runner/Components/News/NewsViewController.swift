@@ -39,7 +39,8 @@ extension NewsViewController: ImageCallback  {
         
         if( referenceViewController?.backDocumentData != nil &&
                    referenceViewController?.frontDocumentData != nil) {
-            self.dismiss(animated: true, completion: nil)
+            coordinatorDelegate?.navigateToFlutter()
+
         }
     }
     
@@ -55,7 +56,8 @@ extension NewsViewController: ImageCallback  {
         // MARK: Dismiss here
         if( referenceViewController?.backDocumentData != nil &&
             referenceViewController?.frontDocumentData != nil) {
-            self.dismiss(animated: true, completion: nil)
+            coordinatorDelegate?.navigateToFlutter()
+
         }
     }
     
@@ -63,7 +65,8 @@ extension NewsViewController: ImageCallback  {
     }
     
     func onScanCancelled() {
-        self.dismiss(animated: true, completion: nil)
+        coordinatorDelegate?.navigateToFlutter()
+
     }
     
     func onError(errorType: SocureSDKErrorType, errorMessage: String) {
@@ -74,7 +77,8 @@ extension NewsViewController: ImageCallback  {
             
         
         if errorType == .DocumentScanFailedError || errorType == .DocumentScanFailedError {
-            //self.dismiss(animated: true, completion: nil)
+            coordinatorDelegate?.navigateToFlutter()
+
         }
     }
     
