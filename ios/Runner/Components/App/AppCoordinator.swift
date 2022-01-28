@@ -11,20 +11,20 @@ class AppCoordinator: BaseCoordinator{
     
     override func start() {
         super.start()
-        navigateToNewsViewController()
+        navigateToSocureViewController()
     }
     
 }
 
-protocol NewsToAppCoordinatorDelegate: class {
+protocol SocureToAppCoordinatorDelegate: class {
     func navigateToFlutterViewController()
 }
 
 protocol FlutterToAppCoordinatorDelegate: class {
-    func navigateToNewsViewController()
+    func navigateToSocureViewController()
 }
 
-extension AppCoordinator: NewsToAppCoordinatorDelegate{
+extension AppCoordinator: SocureToAppCoordinatorDelegate{
     func navigateToFlutterViewController(){
         let coordinator = FlutterCoordinator(navigationController: self.navigationController)
         coordinator.delegate = self
@@ -34,8 +34,8 @@ extension AppCoordinator: NewsToAppCoordinatorDelegate{
 }
 
 extension AppCoordinator: FlutterToAppCoordinatorDelegate{
-    func navigateToNewsViewController(){
-        let coordinator = NewsCoordinator(navigationController: self.navigationController)
+    func navigateToSocureViewController(){
+        let coordinator = SocureCoordinator(navigationController: self.navigationController)
         coordinator.delegate = self
         self.add(coordinator)
         coordinator.start()

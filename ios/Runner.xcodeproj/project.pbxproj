@@ -17,11 +17,11 @@
 		97C5352C27A223FD00379E1E /* SocureSdk.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97C5352327A2236200379E1E /* SocureSdk.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		97C5352D27A223FE00379E1E /* TrustKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C5352427A2236200379E1E /* TrustKit.framework */; };
 		97C5352E27A223FE00379E1E /* TrustKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 97C5352427A2236200379E1E /* TrustKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		97C5353027A2273800379E1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C5352F27A2273800379E1E /* ViewController.swift */; };
+		97C5353027A2273800379E1E /* SocureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C5352F27A2273800379E1E /* SocureController.swift */; };
 		F339C5A02463F2C20017A296 /* FlutterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339C59F2463F2C20017A296 /* FlutterCoordinator.swift */; };
-		F339C5A62463F3490017A296 /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339C5A32463F3490017A296 /* NewsCoordinator.swift */; };
-		F339C5A72463F3490017A296 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339C5A42463F3490017A296 /* NewsViewController.swift */; };
-		F339C5A82463F3490017A296 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F339C5A52463F3490017A296 /* News.storyboard */; };
+		F339C5A62463F3490017A296 /* SocureCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339C5A32463F3490017A296 /* SocureCoordinator.swift */; };
+		F339C5A72463F3490017A296 /* SocureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339C5A42463F3490017A296 /* SocureViewController.swift */; };
+		F339C5A82463F3490017A296 /* Socure.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F339C5A52463F3490017A296 /* Socure.storyboard */; };
 		F339C5AC2463F3830017A296 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339C5AA2463F3830017A296 /* AppCoordinator.swift */; };
 		F339C5AD2463F3830017A296 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F339C5AB2463F3830017A296 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
@@ -57,11 +57,11 @@
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97C5352327A2236200379E1E /* SocureSdk.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SocureSdk.xcframework; sourceTree = "<group>"; };
 		97C5352427A2236200379E1E /* TrustKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TrustKit.framework; sourceTree = "<group>"; };
-		97C5352F27A2273800379E1E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97C5352F27A2273800379E1E /* SocureController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocureController.swift; sourceTree = "<group>"; };
 		F339C59F2463F2C20017A296 /* FlutterCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlutterCoordinator.swift; sourceTree = "<group>"; };
-		F339C5A32463F3490017A296 /* NewsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
-		F339C5A42463F3490017A296 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		F339C5A52463F3490017A296 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		F339C5A32463F3490017A296 /* SocureCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocureCoordinator.swift; sourceTree = "<group>"; };
+		F339C5A42463F3490017A296 /* SocureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocureViewController.swift; sourceTree = "<group>"; };
+		F339C5A52463F3490017A296 /* Socure.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Socure.storyboard; sourceTree = "<group>"; };
 		F339C5AA2463F3830017A296 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F339C5AB2463F3830017A296 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,10 +146,10 @@
 		F339C5A22463F33B0017A296 /* News */ = {
 			isa = PBXGroup;
 			children = (
-				97C5352F27A2273800379E1E /* ViewController.swift */,
-				F339C5A52463F3490017A296 /* News.storyboard */,
-				F339C5A32463F3490017A296 /* NewsCoordinator.swift */,
-				F339C5A42463F3490017A296 /* NewsViewController.swift */,
+				97C5352F27A2273800379E1E /* SocureController.swift */,
+				F339C5A52463F3490017A296 /* Socure.storyboard */,
+				F339C5A32463F3490017A296 /* SocureCoordinator.swift */,
+				F339C5A42463F3490017A296 /* SocureViewController.swift */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
-				F339C5A82463F3490017A296 /* News.storyboard in Resources */,
+				F339C5A82463F3490017A296 /* Socure.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
@@ -280,11 +280,11 @@
 			files = (
 				F339C5AC2463F3830017A296 /* AppCoordinator.swift in Sources */,
 				F339C5A02463F2C20017A296 /* FlutterCoordinator.swift in Sources */,
-				F339C5A62463F3490017A296 /* NewsCoordinator.swift in Sources */,
+				F339C5A62463F3490017A296 /* SocureCoordinator.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
-				F339C5A72463F3490017A296 /* NewsViewController.swift in Sources */,
+				F339C5A72463F3490017A296 /* SocureViewController.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
-				97C5353027A2273800379E1E /* ViewController.swift in Sources */,
+				97C5353027A2273800379E1E /* SocureController.swift in Sources */,
 				F339C5AD2463F3830017A296 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

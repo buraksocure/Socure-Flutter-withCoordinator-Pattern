@@ -29,11 +29,11 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
   static const platform =
-      const MethodChannel('com.objectbeam.flios/navToLogin');
+      const MethodChannel('com.socure.flutter/navToSocure');
 
-  Future<void> _navToLogin() async {
+  Future<void> _navToSocure() async {
     try {
-      final int result = await platform.invokeMethod('goToLogin');
+      final int result = await platform.invokeMethod('goToSocure');
       print('Resul: $result');
     } on PlatformException catch (e) {
       print("Failed: '${e.message}'.");
@@ -49,7 +49,7 @@ super.initState();
     setState(() {
       _counter++;
     });
-    _navToLogin();
+    _navToSocure();
   }
 
   @override
@@ -63,7 +63,7 @@ super.initState();
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'Hit + to initiate Socure Driver License Capture',
             ),
             Text(
               '$_counter',

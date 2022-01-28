@@ -2,10 +2,10 @@
 import UIKit
 import SocureSdk
 
-class NewsViewController: UIViewController {
-    var coordinatorDelegate: NewsCoordinatorDelegate?
+class SocureViewController: UIViewController {
+    var coordinatorDelegate: SocureCoordinatorDelegate?
     
-    var referenceViewController:ViewController?
+    var referenceViewController:SocureController?
     let d​ocScanner​ = DocumentScanner()
 
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class NewsViewController: UIViewController {
 }
 
 
-extension NewsViewController: ImageCallback  {
+extension SocureViewController: ImageCallback  {
     func documentFrontCallBack(docScanResult: DocScanResult) {
         guard let imageData = docScanResult.imageData,
             let image = UIImage.init(data: imageData) else {
@@ -85,7 +85,7 @@ extension NewsViewController: ImageCallback  {
 
 }
 
-extension NewsViewController: BarcodeCallback {
+extension SocureViewController: BarcodeCallback {
     func handleBarcodeData(barcodeData: BarcodeData?) {
         guard let barcodeData = barcodeData else {
             print("Barcode data not found")

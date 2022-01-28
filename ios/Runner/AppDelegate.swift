@@ -12,11 +12,11 @@ import Flutter
     
     let flutterViewController: FlutterViewController = window?.rootViewController as! FlutterViewController
     //
-    let tstChannel = FlutterMethodChannel(name: "com.objectbeam.flios/navToLogin",
+    let tstChannel = FlutterMethodChannel(name: "com.socure.flutter/navToSocure",
                                           binaryMessenger: flutterViewController.binaryMessenger)
     tstChannel.setMethodCallHandler({
         (call: FlutterMethodCall, result: FlutterResult) -> Void in
-        guard call.method == "goToLogin" else {
+        guard call.method == "goToSocure" else {
             result(FlutterMethodNotImplemented)
             return
         }

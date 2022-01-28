@@ -1,14 +1,14 @@
 import Foundation
 import UIKit
 
-final class NewsCoordinator: BaseCoordinator{
+final class SocureCoordinator: BaseCoordinator{
     weak var navigationController: UINavigationController?
-    weak var delegate: NewsToAppCoordinatorDelegate?
+    weak var delegate: SocureToAppCoordinatorDelegate?
     
     override func start() {
         super.start()
-        let storyboard = UIStoryboard(name: "News", bundle: nil)
-        if let container = storyboard.instantiateViewController(withIdentifier: "NewsViewController") as? NewsViewController {
+        let storyboard = UIStoryboard(name: "Socure", bundle: nil)
+        if let container = storyboard.instantiateViewController(withIdentifier: "SocureViewController") as? SocureViewController {
             container.coordinatorDelegate = self
             navigationController?.pushViewController(container, animated: false)
         }
@@ -20,11 +20,11 @@ final class NewsCoordinator: BaseCoordinator{
     }
 }
 
-protocol NewsCoordinatorDelegate {
+protocol SocureCoordinatorDelegate {
     func navigateToFlutter()
 }
 
-extension NewsCoordinator: NewsCoordinatorDelegate{
+extension SocureCoordinator: SocureCoordinatorDelegate{
     func navigateToFlutter(){
         self.delegate?.navigateToFlutterViewController()
     }

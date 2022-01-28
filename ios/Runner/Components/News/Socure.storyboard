@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--News View Controller-->
+        <!--Socure View Controller-->
         <scene sceneID="EVX-1s-SKn">
             <objects>
-                <viewController storyboardIdentifier="NewsViewController" id="0zJ-y0-jOd" customClass="NewsViewController" customModule="Runner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SocureViewController" id="0zJ-y0-jOd" customClass="SocureViewController" customModule="Runner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bCZ-R2-4uw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

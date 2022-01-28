@@ -9,7 +9,7 @@
 import UIKit
 import SocureSdk
 
-class ViewController: UIViewController {
+class SocureController: UIViewController {
     
     @IBOutlet weak var captureButton: UIButton!
     @IBOutlet weak var selfieCaptureButton: UIButton!
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
                 
                 if (permissionsGranted) {
        
-                    let viewController = NewsViewController()
+                    let viewController = SocureViewController()
                     viewController.referenceViewController = self
                     self.present(viewController, animated: true, completion: nil)
                 } else {
