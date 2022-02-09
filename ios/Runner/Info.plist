@@ -26,14 +26,6 @@
 	<true/>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>We need bluetooth data to track you</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Need this to track your location</string>
-	<key>NSMotionUsageDescription</key>
-	<string>Using motion data to track you</string>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>Tracks user for ad purposes.</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
