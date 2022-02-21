@@ -20,6 +20,7 @@ import com.socure.idplus.scanner.license.LicenseFrontScannerActivity
 import com.socure.idplus.scanner.license.LicenseScannerActivity
 import com.socure.idplus.scanner.passport.PassportScannerActivity
 import com.socure.idplus.scanner.selfie.SelfieActivity
+import com.socure.idplus.interfaces.Interfaces.UploadCallback
 import com.socure.idplus.util.DataInfo
 import com.socure.idplus.util.ImageUtil.toBitmap
 

@@ -14,7 +14,7 @@ class SocureViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.d​ocScanner​.initiateLicenseScan(ImageCallback: self, BarcodeCallback: self)
         
-      
+        
         
     }
 
@@ -52,6 +52,9 @@ extension SocureViewController: ImageCallback  {
         }
         referenceViewController?.backDocumentData = imageData
         referenceViewController?.backImageView.image = image
+        
+        coordinatorDelegate?.navigateToFlutter()
+
         
         // MARK: Dismiss here
         if( referenceViewController?.backDocumentData != nil &&
