@@ -1,0 +1,28 @@
+PODS:
+  - SocureSdk (2.1.3):
+    - TrustKit
+  - TrustKit (2.0.0)
+
+DEPENDENCIES:
+  - "SocureSdk (from `git@github.com:socure-inc/socure-docv-sdk-ios.git`)"
+
+SPEC REPOS:
+  trunk:
+    - TrustKit
+
+EXTERNAL SOURCES:
+  SocureSdk:
+    :git: "git@github.com:socure-inc/socure-docv-sdk-ios.git"
+
+CHECKOUT OPTIONS:
+  SocureSdk:
+    :commit: 17ac3a70c3e7332d28d97a98a8af011683a11cdb
+    :git: "git@github.com:socure-inc/socure-docv-sdk-ios.git"
+
+SPEC CHECKSUMS:
+  SocureSdk: 54f543696aac7eb13d4f6993d49d7f339497c690
+  TrustKit: 610b8c71c07914756dd74c380040a3408a747798
+
+PODFILE CHECKSUM: 730032827d21c270ec7751cd1a5824b83daff02f
+
+COCOAPODS: 1.11.3
