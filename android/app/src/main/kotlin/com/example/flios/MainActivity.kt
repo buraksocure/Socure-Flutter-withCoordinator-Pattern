@@ -47,8 +47,14 @@ class MainActivity: FlutterActivity() {
         }
     }
     private fun startMainActivity() {
+
+        // Start Socure Activity and MoveToBack
+
         val intent = Intent(this, SocureActivity::class.java)
         startActivity(intent)
+
+        // Start your normal activity
+
     }
 
 
