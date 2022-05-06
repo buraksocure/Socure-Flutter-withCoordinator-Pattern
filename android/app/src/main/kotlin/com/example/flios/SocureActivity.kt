@@ -45,12 +45,6 @@ class SocureActivity : AppCompatActivity(),
 
     var allPermissionChecked: Boolean = false
 
-    private val permissions = listOf(
-        Manifest.permission.CAMERA,
-        Manifest.permission.INTERNET,
-        Manifest.permission.ACCESS_NETWORK_STATE,
-        Manifest.permission.ACCESS_WIFI_STATE
-    )
     companion object {
         const val TAG = "MainActivity"
         private var PRIVATE_MODE = 0
@@ -59,19 +53,9 @@ class SocureActivity : AppCompatActivity(),
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var status = "status"
-        var documentTypeTitle = "document_type_title"
-        var autoFilling = "auto_filling"
-
-       val passingIntent = Intent(this@SocureActivity, LicenseScannerActivity::class.java)
-            passingIntent.putExtra(status, 0)
-            passingIntent.putExtra(documentTypeTitle, "Driver's License")
-            passingIntent.putExtra(autoFilling, true)
-            startActivityForResult(passingIntent, 300)
-
-            loadDeviceRiskManager()
-
-        }
+        loadDeviceRiskManager()
+        moveTaskToBack(true);
+    }
 
 
 
@@ -96,10 +80,7 @@ class SocureActivity : AppCompatActivity(),
             callback = this,
             deviceRiskUrl = "https://dvnfo.com/"
         )
-
         deviceRiskManager?.sendData();
-
-
     }
 
     override fun dataUploadFinished(uploadResult: UploadResult) {
@@ -124,9 +105,6 @@ class SocureActivity : AppCompatActivity(),
         };
 
     }
-
-
-
 
 }
 
